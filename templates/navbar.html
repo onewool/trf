@@ -1,0 +1,53 @@
+<!-----------------네브바------------------->
+<div class="container-fluid mx-auto">
+      <nav class="navbar navbar-expand-lg fixed-top" >
+        <div class="container">
+          <a class="navbar-brand mx-auto" href="{% url 'traffico:index' %}">
+            <img src="https://raw.githubusercontent.com/onewool/traffico/main/image/icon/logo.svg" alt="Traffico" class="brightness">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+          </button><!-- navbar-toggler -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="{% url 'traffico:introduce' %}">서비스 안내<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                  지역별 데이터
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">서울</a>
+                  <a class="dropdown-item" href="#">경기</a>
+                  <a class="dropdown-item" href="#">강원</a>
+                  <a class="dropdown-item" href="#">경상</a>
+                  <a class="dropdown-item" href="#">충청</a>
+                  <a class="dropdown-item" href="#">전라</a>
+                </div>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="{% url 'traffico:board' %}">알림마당</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="">이용안내</a>
+              </li>
+            </ul><!-- navbar-nav -->
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                {% if user.is_authenticated %}
+                <a class="nav-link" href="{% url 'common:logout' %}">{{ user.username }} (로그아웃)</a>
+                {% else %}
+                <a class="nav-link" href="{% url 'common:login' %}">로그인</a>
+                {% endif %}
+              </li>
+              <li class="nav-item">
+                {% if not user.is_authenticated %}
+                <a class="nav-link" href="{% url 'common:signup' %}">회원가입</a>
+                {% endif %}
+              </li>
+            </ul><!-- navbar-nav -->
+          </div><!-- collapse -->
+        </div><!-- container -->
+      </nav><!-- navbar -->
+</div>

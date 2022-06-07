@@ -1,0 +1,139 @@
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+      /*customizing css*/
+
+      .my-10{
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+      }
+      /*폰트*/
+      body{
+        position: relative;
+        height: 100%;
+        font-family: 'NanumSquare';
+        font-weight: 600;
+        font-size: 1.2em;
+        margin: 0;
+        padding: 0;
+      }
+      :root {
+        --shadow-sm:  0 0.3px 0.4px rgba(0, 0, 0, 0.025),
+        0 0.9px 1.5px rgba(0, 0, 0, 0.05),
+        0 3.5px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      /****************************************** nav ******************************************/
+      .shadowsm{
+        box-shadow: var(--shadow-sm);
+      }
+      .brightness {filter: contrast(120%) saturate(4) grayscale(100%) brightness(4.00);}
+      nav, .navbar-nav .active>.nav-link, .navbar-nav .nav-link.active,  .navbar-nav .nav-link.show, .navbar-nav .show>.nav-link, .navbar-nav .nav-link{
+        color: ghostwhite;
+      }
+      .navbar-brand img{
+        height: 60px;
+      }
+      a.nav-link {
+        width: 100%;
+        height: 100%;
+      }
+      li{
+        list-style: none;
+      }
+      .navbar-toggler{
+        background-color: transparent;
+        border-color: #9E9E9E;
+      }
+      .navbar-toggler-icon{
+        color: ghostwhite;
+        width: 1em;
+        height: 1em;
+      }
+      /****************************************** svg ******************************************/
+      .container-fluid.color4{
+        position: relative;
+      }
+      .land
+      {
+        fill: #CCCCCC;
+        fill-opacity: 1;
+        stroke:white;
+        stroke-opacity: 1;
+        stroke-width:1;
+      }
+      .land:hover{
+        fill: #f6aea4;
+      }
+
+      svg{
+        width:650px;
+        height: 800px;
+        position: relative;
+        left: 50%;
+        margin-left: -250px;
+        top: 0px;
+      }
+      .color1 {background-color: #f6aea4; !important}
+      .color2 {background-color: #f1cd7e; !important}
+      .color3 {background-color: #FFFFFF; !important}
+      .color4 {background-color: #23418B; !important}
+      .color5 {background-color: #5FB6BF; !important}
+
+      .container-fluid.color4{
+        height: 900px;
+      }
+      /*************************************** introduce ***************************************/
+      .container{
+        position: relative;
+      }
+      .container.introduce, .container.chart{
+        position: relative;
+        top: 200px;
+        text-align: center;
+      }
+      .introduce>img{
+        display : block;
+        margin : 10px auto;
+        text-align: center;
+        width: 100%;
+      }
+      .introduce p{
+        margin: 100px auto;
+        text-align: center;
+        color: #727272;
+      }
+      /***************************************** chart *****************************************/
+
+      .chart img:nth-child(1){
+        display : inline-block;
+        margin : 10px auto;
+        text-align: center;
+        width: 100%;
+      }
+      .chart img:nth-child(2){
+        display : inline-block;
+        margin : 10px auto;
+        text-align: center;
+        width: 90%;
+      }
+      .chart p{
+        margin: 100px auto;
+        color: #727272;
+      }
+      .padding-100{
+        padding-top: 100px
+      }
+
+      /***************************************** footer *****************************************/
+      footer{
+        position: relative;
+        bottom:0px
+      }
+      /****************************************** mediaquery ******************************************/
+      /*Xs and Small devices (landscape phones, less than 758px)*/
+       @media (max-width: 767.98px) {
+        svg{
+          width: 150%;
+          margin-left: -280px;
+        }
+       }

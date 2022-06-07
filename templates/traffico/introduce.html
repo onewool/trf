@@ -1,0 +1,160 @@
+{% extends 'base.html' %}
+{% block content %}
+<!----------------- Swiper ----------------->
+<div class="swiper-container padding-100">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide row d-flex color4 traffico">
+          <div class="container">
+            <div class="text-center title animated2 animatedFadeInUp fadeInUp">
+              <h1><img class="img-fluid mx-auto" src="https://raw.githubusercontent.com/onewool/traffico/main/image/icon/logo.svg" alt="" id="logoimg"></h1>
+              <h5 class="text-center text-white">
+                Traffico는 공공기관에서 제공하는 교통 오픈데이터를 수집해 쉽고 빠르게 데이터 전처리 과정을 거치고, 데이터 시각화를 통해 사용자들이 보다 편리하게 사고 기록을 볼 수 있게 도와주는 서비스입니다.
+              </h5>
+            </div>
+            <hr class="animated3 animatedFadeInUp fadeInUp">
+            <div id="introduceimg" class="animated4 animatedFadeInUp fadeInUp">
+              <img src="https://raw.githubusercontent.com/onewool/traffico/main/image/introduce1.png" alt="introduce" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide row webdata bg-light">
+          <div class="container">
+            <div class="title animated2 animatedFadeInUp fadeInUp">
+              <h1 class="text-center">웹 데이터 수집</h1>
+              <h5 class="text-center">
+                Traffico는 Pandas DataFrame을 통해 공공기관에서 제공하는 교통 오픈데이터를 로드, 가공하고, requests와 BeautifulSoup을 통해 인스타그램 크롤링을 통해 교통에 대한 시민들의 생각을 수집합니다.
+              </h5>
+            </div>
+            <div class="row rowcontents">
+              <iframe src="./video/introduce video.mp4" frameborder="0" class="col-xs-12 col-lg-8 mb-4" height=400></iframe>
+              <div class="col-xs-12 col-lg-4">
+                <div class="card">
+                  <div class="card-body mx-auto">
+                    <pre>{
+                      <span class="text-warning">index</span> : "사고 건 수",
+                      <div class="row">
+                        <span class="text-warning">column</span> : [
+                        "생성일"
+                        "사고ID"
+                        "발생 일시"
+                        "종료 일시"
+                        "분류 코드""
+                        "분류 명"
+                        "메시지"
+                        "동경"
+                        "북위"
+                        ],
+                        <span class="text-warning">data</span> :  [
+                        "발생 일시"
+                        "분류명"
+                        "경도"
+                        "위도"
+                      ]</div>}</pre></div><!-- card-body --></div><!-- card --></div><!-- col-xs-12 col-lg-4 mb-4 -->
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide row d-flex pandas">
+                  <div class="container">
+                    <div class="title animated2 animatedFadeInUp fadeInUp">
+                      <h1 class="text-center text-white">Pandas를 통한 변수 관리</h1>
+                      <h5 class="text-center text-white">
+                        Traffico는 Pandas를 통해 공공기관에서 제공하는 교통 오픈데이터 및 openAPI를 정보를 수신하고 데이터를 로드, 인코딩을 지정합니다.
+                      </h5>
+                    </div>
+                    <div class="row rowcontents animated4 animatedFadeInUp fadeInUp">
+                      <div class="col-xs-12 col-lg-5 mb-4">
+                        <div class="card">
+                          <ul>
+                            <li>소스를 수정하지 않고 모든 태그를 관리</li>
+                            <li>맞춤 함수를 사용 및 체이닝 기법을 통해 목적에 맞는 수집항목 태깅</li>
+                            <li>requests모듈을 통해 raw.github 데이터 불러오기</li>
+                            <li>pivot, transpose와 같은 reshape 기능</li>
+                            <li>groupby, pibot_table등을 통한 데이터 요약과 분석</li>
+                          </ul>
+                        </div><!-- card -->
+                      </div><!-- col-xs-12 col-lg-5 mb-4 -->
+                      <div class="col-xs-12 col-lg-7 mb-4">
+                        <img class="img-fluid" src="https://raw.githubusercontent.com/onewool/traffico/main/image/introduce%20table.jpg" alt="pandas">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide row d-flex numpy bg-light">
+                  <div class="container">
+                    <div class="title animated2 animatedFadeInUp fadeInUp">
+                      <h1 class="text-center">Numpy를 통한 데이터 타입 관리</h1>
+                      <h5 class="text-center">
+                        Traffico는 Numpy를 통해 기본적인 수치계산을 하고, 데이터 형태를 지정 및 변경합니다.
+                      </h5>
+                    </div>
+                    <div class="row rowcontents animated4 animatedFadeInUp fadeInUp bg-light">
+                      <div class="col-xs-12 col-lg-7">
+                        <img class="img-fluid" src="https://raw.githubusercontent.com/onewool/traffico/main/image/numpy.png" alt="numy">
+                      </div>
+                      <div class="col-xs-12 col-lg-5 mb-4">
+                        <div class="card">
+                          <ul>
+                            <li>비교적 빠른 연산을 지원하며 메모리를 효율적으로 사용</li>
+                            <li>astype함수를 통해 데이터 형태 변환</li>
+                            <li>group화를 위해 round함수를 통한 위도 경도 소수 2번째자리까지 반올림</li>
+                            <li>mean, std, var함수를 통해 산술평균, 표준편차, 분산을 계산</li>
+                            <li>where, select함수를 활용한 조건식 작성</li>
+                          </ul>
+                        </div><!-- card -->
+                      </div><!-- col-xs-12 col-lg-5 mb-4 -->
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide row d-flex matplotlib">
+                  <div class="container">
+                    <div class="title animated2 animatedFadeInUp fadeInUp">
+                      <h1 class="text-center text-white">Matplotlib를 통한 데이터 시각화</h1>
+                      <h5 class="text-center text-white">
+                        Traffico는 Matplotlib를 통해 boxplot, scatter, barplot 등 기본적인 시각화 방법을 사용합니다.
+                      </h5>
+                    </div>
+                    <div class="row rowcontents animated4 animatedFadeInUp fadeInUp">
+                      <div class="col-xs-12 col-lg-6">
+                        <div class="card">
+                          <ul>
+                            <li>boxplot을 통한 이상치 검증</li>
+                            <li>scatter를 통한 시구군별 과거 돌발상황 건수 분포도 확인</li>
+                            <li>barplot을 통한 원인 별 하위 10개 시구군 비교</li>
+                            <li>pieplot을 통한 원인 별 상위 10개 시구군 비교</li>
+                            <li>colormap 기능을 통한 색상을 통한 데이터 강조</li>
+                          </ul>
+                        </div><!-- card -->
+                      </div><!-- col-xs-12 col-lg-5 mb-4 -->
+                      <div class="col-xs-12 col-lg-6 mb-4">
+                        <img class="img-fluid" src="https://raw.githubusercontent.com/onewool/traffico/main/image/matplotlib.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide row folium bg-light">
+                  <div class="container">
+                    <div class="title animated2 animatedFadeInUp fadeInUp">
+                      <h1 class="text-center">Folium을 통한 지도 데이터 활용</h1>
+                      <h5 class="text-center">
+                        Traffico는 Folium의 OpenStreetMap 및 공공 GeoJson 데이터를 통해 지도 데이터를 활용합니다.
+                      </h5>
+                    </div>
+                    <div class="row rowcontents animated4 animatedFadeInUp fadeInUp">
+                      <iframe src="./Data Analysis/Si_Do_map.html" frameborder="0" class="col-xs-12 col-lg-7"></iframe>
+                      <div class="col-xs-12 col-lg-5">
+                        <div class="card">
+                          <ul>
+                            <li>folium모듈을 사용해 공간 시각화 및 지도위에 데이터 시각화</li>
+                            <li>GeoJson으로 대한민국 행정구역 시도, 시군구에 대한 공간 데이터 불러오기</li>
+                            <li>위경도 정보로 marker활용 choropleth 그리기</li>
+                            <li>원으로 범위를 표기해 각 시도별 교통 취약구간 시각화</li>
+                            <li>html 파일로 내보내기 및 iframe으로 웹사이트 연결</li>
+                          </ul>
+                        </div><!-- card -->
+                      </div><!-- col-xs-12 col-lg-4 mb-4 -->
+                    </div>
+                  </div>
+                </div>
+        </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,1 @@
+ function autoResizeIframe() {  $('iframe').on('load', function() {   if(this.contentDocument) {      $(this).height(this.contentDocument.documentElement.scrollHeight);    }   else {      $(this).height(this.contentWindow.document.body.scrollHeight);    } });}
