@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
 <!-- 404 Page -->
-<div class="container">
+<div class="container padding-100">
     <div class="row justify-content-center">
         <div class="col-12 text-center">
             <span class="display-1 d-block">404</span>
@@ -10,4 +10,9 @@
         </div>
     </div>
 </div>
+{% endblock %}
+{% block script %}
+<script type='text/javascript'>
+$( 'footer' ).addClass( 'fixed-bottom' );
+</script>
 {% endblock %}
