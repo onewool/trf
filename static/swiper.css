@@ -2,7 +2,7 @@
       pre{
         font-family: 'NanumSquare';
       }
-      .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl{
+      .container-lg, .container-md, .container-sm, .container-xl{
         padding: 0;
         margin: auto;
       }
