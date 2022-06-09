@@ -5,6 +5,9 @@ from django.db.models import Q
 
 from ..models import Question
 
+import logging
+logger = logging.getLogger('traffico')
+
 def index(request):
     return render(request, 'traffico/index.html')
 
