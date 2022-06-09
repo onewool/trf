@@ -9,6 +9,7 @@ import logging
 logger = logging.getLogger('traffico')
 
 def index(request):
+    logger.info("INFO 레벨로 출력")
     return render(request, 'traffico/index.html')
 
 def introduce(request):
