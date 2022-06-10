@@ -1,6 +1,14 @@
 {% extends 'base.html' %}
 {% block content %}
 <div class="container padding-100">
+  <div class="row pb-5">
+    <div class="col-md-6 align-self-center text-white">
+        <h2>traffico</h2>
+        <h1>지역별 교통데이터</h1>
+        <p >Traffico는 OpenStreetMap 및 공공데이터, Geojson 데이터를 통해 지도 데이터를 활용하고 있습니다.</p>
+        <span class="badge badge-primary p-3">각 지역을 클릭하시면 해당 지역 데이터로 연결됩니다.</span>
+    </div>
+    <div class="col-md-6">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:amcharts="http://amcharts.com/ammap" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
           <defs>
 
@@ -37,7 +45,8 @@
 
           </g>
         </svg>
-      </div><!-- color3 container -->
+    </div>
+    </div>
       <div class="container chart">
         <div class="row">
           <img src="https://raw.githubusercontent.com/onewool/traffico/main/image/index%20%EC%9B%8C%EB%93%9C%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C.png" alt="wordcloud" class="img-fluid col-12 col-md-6">

@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load traffico_filter %}
 {% block content %}
-<div class="container my-3 padding-100">
+<div class="container my-3 padding-100 min-h">
     <div class="row my-3">
         <div class="col-6">
             <a href="{% url 'traffico:question_create' %}" class="btn btn-primary">질문 등록하기</a>
@@ -27,7 +27,7 @@
         <tbody>
         {% if question_list %}
         {% for question in question_list %}
-        <tr class="text-center">
+        <tr class="text-center text-light">
             <td>
                 <!-- 번호 = 전체건수 - 시작인덱스 - 현재인덱스 + 1 -->
                 {{ question_list.paginator.count|sub:question_list.start_index|sub:forloop.counter0|add:1 }}

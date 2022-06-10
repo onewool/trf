@@ -10,7 +10,11 @@
     <!-- traffico CSS -->
 
     <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'swiper.css' %}">
+
+    <!-- css Start -->
+    {% block css %}
+    {% endblock %}
+    <!-- css End -->
 
     <title>Hello, traffico!</title>
 </head>

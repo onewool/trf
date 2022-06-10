@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="container my-3 padding-100 text-white">
+<div class="container my-3 padding-100 text-white min-h">
     <form method="post" action="{% url 'common:signup' %}">
         {% csrf_token %}
         {% include "form_errors.html" %}
@@ -27,9 +27,4 @@
         <button type="submit" class="btn btn-primary">생성하기</button>
     </form>
 </div>
-{% endblock %}
-{% block script %}
-<script type='text/javascript'>
-$( 'footer' ).addClass( 'fixed-bottom' );
-</script>
 {% endblock %}

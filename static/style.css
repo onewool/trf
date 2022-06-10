@@ -1,18 +1,13 @@
 @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
 
       /*customizing css*/
-
-      .my-10{
-        margin-top: 6rem;
-        margin-bottom: 6rem;
-      }
       /*폰트*/
       body{
         position: relative;
         height: 100%;
         font-family: 'NanumSquare';
         font-weight: 600;
-        font-size: 1.2em;
+        font-size: 1.5em;
         margin: 0;
         padding: 0;
       }
@@ -50,9 +45,7 @@
         height: 1em;
       }
       /****************************************** svg ******************************************/
-      .container-fluid.color4{
-        position: relative;
-      }
+
       .land
       {
         fill: #CCCCCC;
@@ -66,31 +59,24 @@
       }
 
       svg{
-        width:650px;
-        height: 800px;
-        position: relative;
-        left: 50%;
-        margin-left: -250px;
-        top: 0px;
+        width:100%;
+        height: 650px;
+        overflow:hidden
+
       }
+      svg g{
+        transform: scale(0.9);
+      }
+
       .color1 {background-color: #f6aea4; !important}
       .color2 {background-color: #f1cd7e; !important}
       .color3 {background-color: #FFFFFF; !important}
       .color4 {background-color: #23418B; !important}
       .color5 {background-color: #5FB6BF; !important}
 
-      .container-fluid.color4{
-        height: 900px;
-      }
+
       /*************************************** introduce ***************************************/
-      .container{
-        position: relative;
-      }
-      .container.introduce, .container.chart{
-        position: relative;
-        top: 200px;
-        text-align: center;
-      }
+
       .introduce>img{
         display : block;
         margin : 10px auto;
@@ -100,7 +86,7 @@
       .introduce p{
         margin: 100px auto;
         text-align: center;
-        color: #727272;
+        color: #fff;
       }
       /***************************************** chart *****************************************/
 
@@ -118,7 +104,7 @@
       }
       .chart p{
         margin: 100px auto;
-        color: #727272;
+        color: #fff;
       }
       .padding-100{
         padding-top: 100px
@@ -129,11 +115,13 @@
         position: relative;
         bottom:0px
       }
-      /****************************************** mediaquery ******************************************/
-      /*Xs and Small devices (landscape phones, less than 758px)*/
-       @media (max-width: 767.98px) {
-        svg{
-          width: 150%;
-          margin-left: -280px;
-        }
-       }
+
+      td a{
+        color: #fff
+        !important
+      }
+
+      .min-h{
+        min-height: 760px
+      }
+
