@@ -1,0 +1,46 @@
+{% load static %}
+<div class="row text-center" id="fogGraph">
+  <div class="col-md-12 col-xs-12">
+    <h5 class="text-center c-white">안개 다발 지역</h5>
+    <table class="table table-sm">
+      <thead>
+        <tr>
+          <th scope="col">위치</th>
+          <th scope="col">위도</th>
+          <th scope="col">경도</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">해당 지역 없음</th>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div class="row text-center" id="frozenGraph">
+  <div class="col-md-6 col-xs-12">
+    <h5 class="text-center c-white">결빙 다발 지역</h5>
+    <table class="table table-sm">
+      <thead>
+        <tr>
+          <th scope="col">위치</th>
+          <th scope="col">위도</th>
+          <th scope="col">경도</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">달래내고개(2)</th>
+          <td>37.444925</td>
+          <td>127.057315</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-md-6 col-xs-12">
+    <h5 class="text-center c-white">결빙(356개)지역 중 <span class="c-red">상위 5</span></h5>
+    <img src="{% static 'data/graph/SeoulFrost.png' %}" class="img-fluid">
+  </div>
+</div>

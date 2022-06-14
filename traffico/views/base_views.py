@@ -15,6 +15,27 @@ def index(request):
 def introduce(request):
     return render(request, 'traffico/introduce.html')
 
+def gyeonggi(request):
+    return render(request, 'traffico/area/gyeonggi.html')
+
+def seoul(request):
+    return render(request, 'traffico/area/seoul.html')
+
+def gangwon(request):
+    return render(request, 'traffico/area/gangwon.html')
+
+def chungcheong(request):
+    return render(request, 'traffico/area/chungcheong.html')
+
+def gyeongsang(request):
+    return render(request, 'traffico/area/gyeongsang.html')
+
+def jeolla(request):
+    return render(request, 'traffico/area/jeolla.html')
+
+def sitemap(request):
+    return render(request, 'traffico/sitemap.html')
+
 def board(request):
     page = request.GET.get('page', '1')  # 페이지
     kw = request.GET.get('kw', '')  # 검색어

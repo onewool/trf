@@ -1,0 +1,87 @@
+{% load static %}
+<div class="row text-center" id="fogGraph">
+  <div class="col-md-12 col-xs-12">
+    <h5 class="text-center c-white">안개 다발 지역</h5>
+    <table class="table table-sm">
+      <thead>
+        <tr>
+          <th scope="col">위치</th>
+          <th scope="col">위도</th>
+          <th scope="col">경도</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">현풍IC~달성IC(9km)</th>
+          <td>35.73079</td>
+          <td>128.47973</td>
+        </tr>
+        <tr>
+          <th scope="row">칠서SA~영산SA(5km)</th>
+          <td>35.3912</td>
+          <td>128.49019</td>
+        </tr>
+        <tr>
+          <th scope="row">서시천교(1.5km)</th>
+          <td>36.494008</td>
+          <td>129.118359</td>
+        </tr>
+        <tr>
+          <th scope="row">현풍JCT(1km)</th>
+          <td>35.674716</td>
+          <td>128.4351</td>
+        </tr>
+        <tr>
+          <th scope="row">용계천교(0.6km)</th>
+          <td>36.441552</td>
+          <td>128.968989</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div class="row text-center" id="frozenGraph">
+  <div class="col-md-6 col-xs-12">
+    <h5 class="text-center c-white">결빙 다발 지역</h5>
+    <table class="table table-sm">
+      <thead>
+        <tr>
+          <th scope="col">위치</th>
+          <th scope="col">위도</th>
+          <th scope="col">경도</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">가지산(11km)</th>
+          <td>36.961443</td>
+          <td>126.854761</td>
+        </tr>
+        <tr>
+          <th scope="row">방리재(10.2km)</th>
+          <td>37.598554</td>
+          <td>127.490396</td>
+        </tr>
+        <tr>
+          <th scope="row">넛재터널~연화터널(9.1km)</th>
+          <td>37.917071</td>
+          <td>127.187559</td>
+        </tr>
+        <tr>
+          <th scope="row">밤머리재(7.8km)</th>
+          <td>38.03124</td>
+          <td>127.444312</td>
+        </tr>
+        <tr>
+          <th scope="row">구주령(6.4km)</th>
+          <td>37.794753</td>
+          <td>127.365732</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-md-6 col-xs-12">
+    <h5 class="text-center c-white">결빙(356개)지역 중 <span class="c-red">상위 5</span></h5>
+    <img src="{% static 'data/graph/GyeaongsangFrost.png' %}" class="img-fluid">
+  </div>
+</div>

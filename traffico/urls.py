@@ -11,6 +11,13 @@ urlpatterns = [
     path('introduce', base_views.introduce, name='introduce'),
     path('board', base_views.board, name='board'),
     path('<int:question_id>/', base_views.detail, name='detail'),
+    path('gyeonggi/', base_views.gyeonggi, name='gyeonggi'),
+    path('seoul/', base_views.seoul, name='seoul'),
+    path('gangwon/', base_views.gangwon, name='gangwon'),
+    path('chungcheong/', base_views.chungcheong, name='chungcheong'),
+    path('gyeongsang/', base_views.gyeongsang, name='gyeongsang'),
+    path('jeolla/', base_views.jeolla, name='jeolla'),
+    path('sitemap/', base_views.sitemap, name='sitemap'),
 
     # question_views.py
     path('question/create/',

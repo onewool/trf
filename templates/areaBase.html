@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'area.css' %}">
+{% endblock %}
+{% block content %}
+<div class="mx-auto">
+  <div class="row mx-auto animated2 animatedFadeInUp fadeInUp pb-5" id="maps">
+      <div class="col-md-2 justify-center button-group filter-button-group">
+         <ul>
+             <button type="button" class="btn accident"><img src="{% static 'data/img/acci.png' %}" alt="" class="c-imgSize shadow-lg" id="accidentBtn"></button>
+             <button type="button" class="btn construction"><img src="{% static 'data/img/cons.png' %}" alt="" class="c-imgSize shadow-lg" id="constructionBtn"></button>
+             <button type="button" class="btn fog"><img src="{% static 'data/img/fog.png' %}" alt="" class="c-imgSize shadow-lg" id="fogBtn"></button>
+             <button type="button" class="btn frozen"><img src="{% static 'data/img/frozen.png' %}" alt="" class="c-imgSize shadow-lg" id="frozenBtn"></button>
+         </ul>
+      </div>
+{% block map %}
+{% endblock %}
+  </div>
+</div><!-- container -->
+{% block area %}
+{% endblock %}
+{% endblock %}
+{% block script %}
+<script src="{% static 'area.js' %}"></script>
+{% endblock %}

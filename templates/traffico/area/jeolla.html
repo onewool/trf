@@ -1,0 +1,48 @@
+{% extends 'areaBase.html' %}
+{% load static %}
+{% block map %}
+<div class="container-fluid mapparents">
+          <div class="col-12 mx-auto map" id="constructionMap">
+              <iframe src="{% static 'data/2019~2021 전라도공사_heatmap.html' %}" frameborder="0" height=500></iframe>
+          </div>
+          <div class="col-12 mx-auto map" id="fogMap">
+              <iframe src="{% static 'data/Jeolla_fog.html' %}" frameborder="0" height=500></iframe>
+          </div>
+          <div class="col-12 mx-auto map" id="frozenMap">
+              <iframe src="{% static 'data/Jeolla_frost.html' %}" frameborder="0" height=500></iframe>
+          </div>
+          <div class="col-12 mx-auto map" id="accidentMap">
+              <iframe src="{% static 'data/2019~2021 전라도사고_heatmap.html' %}" frameborder="0" height=500></iframe>
+          </div>
+      </div>
+{% endblock %}
+{% block area %}
+<div class="container-fluid c-back-grey graph pb-5 min-h padding-area">
+        <div class="row pt-5">
+            <div class="col py-5">
+                <h3 class="font-weight-bold c-white">전라도 지역의 정보</h3>
+            </div>
+        </div>
+        <div class="row" id="accidentGraph">
+            <div class="col-md-6 col-xs-12">
+                <h5 class="text-center c-white">2019~2021년 사고 다발 지역 <span class="c-red">상위 10</span></h5>
+                <img src="{% static 'data/graph/JeollaAcc01.png' %}" class="img-fluid">
+            </div>
+            <div class="col-md-6 col-xs-12">
+              <h5 class="text-center c-white">2019~2021년 사고 다발 지역 <span class="c-red">하위 10</span></h5>
+              <img src="{% static 'data/graph/JeollaAcc02.png' %}" class="img-fluid">
+            </div>
+        </div>
+        <div class="row" id="constructionGraph">
+            <div class="col-md-6 col-xs-12">
+                <h5 class="text-center c-white">2019~2021년 공사 다발 지역 <span class="c-red">상위 10</span></h5>
+                <img src="{% static 'data/graph/JeollaCon01.png' %}" class="img-fluid">
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <h5 class="text-center c-white">2019~2021년 공사 다발 지역 <span class="c-red">하위 10</span></h5>
+                <img src="{% static 'data/graph/JeollaCon02.png' %}" class="img-fluid">
+            </div>
+        </div>
+    {% include "traffico/area/Jeolla_table.html" %}
+</div>
+{% endblock %}

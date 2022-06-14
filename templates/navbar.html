@@ -18,20 +18,18 @@
                   지역별 데이터
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">서울</a>
-                  <a class="dropdown-item" href="#">경기</a>
-                  <a class="dropdown-item" href="#">강원</a>
-                  <a class="dropdown-item" href="#">경상</a>
-                  <a class="dropdown-item" href="#">충청</a>
-                  <a class="dropdown-item" href="#">전라</a>
+                  <a class="dropdown-item" href="{% url 'traffico:seoul' %}">서울</a>
+                  <a class="dropdown-item" href="{% url 'traffico:gyeonggi' %}">경기</a>
+                  <a class="dropdown-item" href="{% url 'traffico:gangwon' %}">강원</a>
+                  <a class="dropdown-item" href="{% url 'traffico:gyeongsang' %}">경상</a>
+                  <a class="dropdown-item" href="{% url 'traffico:chungcheong' %}">충청</a>
+                  <a class="dropdown-item" href="{% url 'traffico:jeolla' %}">전라</a>
                 </div>
               </li>
               <li class="nav-item active">
                 <a class="nav-link" href="{% url 'traffico:board' %}"> 문의 게시판</a>
               </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="">이용안내</a>
-              </li>
+
             </ul><!-- navbar-nav -->
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">

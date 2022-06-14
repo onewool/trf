@@ -15,8 +15,9 @@
     {% block css %}
     {% endblock %}
     <!-- css End -->
+    <link rel="shortcut icon" href="{% static 'favicon.svg' %}"/>
 
-    <title>Hello, traffico!</title>
+    <title>traffico!</title>
 </head>
 <body class="color4">
 <!-- 네비게이션바 -->
@@ -30,8 +31,8 @@
         <div class="row">
           <hr style="width: 95%">
           <div class="col-md-4 col-xs-12">
-            <button type="button" class="btn btn-secondary btn-lg">사이트 소개</button>
-            <button type="button" class="btn btn-secondary btn-lg">사이트 맵</button>
+            <button type="button" class="btn btn-secondary btn-lg" onclick = "location.href = '{% url 'traffico:introduce' %}'">사이트 소개</button>
+            <button type="button" class="btn btn-secondary btn-lg" onclick = "location.href = '{% url 'traffico:sitemap' %}'">사이트 맵</button>
           </div>
           <ul class="col-md-4 col-xs-12">
             <li>· 유한울 : docus17@gmail.com</li>
