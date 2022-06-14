@@ -2,6 +2,7 @@
 {% load static %}
 {% block css %}
 <link rel="stylesheet" type="text/css" href="{% static 'area.css' %}">
+<div class="container">
 {% endblock %}
 {% block content %}
 <div class="mx-auto">
@@ -20,6 +21,7 @@
 </div><!-- container -->
 {% block area %}
 {% endblock %}
+</div>
 {% endblock %}
 {% block script %}
 <script src="{% static 'area.js' %}"></script>

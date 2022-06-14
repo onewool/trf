@@ -129,3 +129,8 @@
         padding-top: 700px
       }
 
+      .table, table{
+        color: #fff;
+        !important
+      }
+
