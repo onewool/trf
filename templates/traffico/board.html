@@ -1,8 +1,8 @@
 {% extends 'base.html' %}
 {% load traffico_filter %}
 {% block content %}
-<div class="container my-3 padding-100 min-h">
-    <div class="row my-3">
+<div class="container mb-3 padding-100 min-h">
+    <div class="row mb-3">
         <div class="col-6">
             <a href="{% url 'traffico:question_create' %}" class="btn btn-primary">질문 등록하기</a>
         </div>
@@ -112,5 +112,6 @@ btn_search.addEventListener('click', function() {
     document.getElementById('page').value = 1;  // 검색버튼을 클릭할 경우 1페이지부터 조회한다.
     document.getElementById('searchForm').submit();
 });
+
 </script>
 {% endblock %}

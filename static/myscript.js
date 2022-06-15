@@ -6,7 +6,7 @@ $(function(){
         $(window).scroll(function(){
          var scrollTop =$("html,body").scrollTop();
          if (scrollTop>100) {
-          nav.removeClass("bg-transparent","shadowsm");
+          nav.removeClass("color4","shadowsm");
           nav.addClass("bg-white");
           navtxt.removeClass("text-white");
           navtxt.addClass("text-dark");
@@ -15,10 +15,11 @@ $(function(){
         }else{
           toggle.removeClass("text-dark");
           nav.removeClass("bg-white");
-          nav.addClass("bg-transparent","shadowsm");
+          nav.addClass("color4","shadowsm");
           navtxt.removeClass("text-dark");
           navtxt.addClass("text-white");
           img.addClass("brightness");
         }
+
       })
       })

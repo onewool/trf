@@ -1,13 +1,14 @@
 @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
 
       /*customizing css*/
+      html, body{
+        height:100%;
+      }
       /*폰트*/
       body{
-        position: relative;
-        height: 100%;
         font-family: 'NanumSquare';
         font-weight: 600;
-        font-size: 1.5em;
+        font-size: 17px !important;
         margin: 0;
         padding: 0;
       }
@@ -113,16 +114,13 @@
       /***************************************** footer *****************************************/
       footer{
         position: relative;
-        bottom:0px
+        height:220px;
+        transform:translateY(-100%)
       }
 
       td a{
         color: #fff
         !important
-      }
-
-      .min-h{
-        min-height: 760px
       }
 
       .padding-area{
@@ -132,5 +130,16 @@
       .table, table{
         color: #fff;
         !important
+      }
+
+      .dropdown-menu, body, .badge{
+        font-size: 17px !important;
+        word-break: keep-all !important;
+      }
+
+      .wrapper{
+        height:auto;
+        min-height:100%;
+        padding-bottom:220px
       }
 
