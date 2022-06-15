@@ -143,6 +143,10 @@
         padding-bottom:220px
       }
 
+      a.dropdown-item{
+          color: black !important;
+       }
+
       ul li a{
         color: #fff
         !important
